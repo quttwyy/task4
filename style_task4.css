@@ -9,14 +9,19 @@ header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-    min-height: 150vh;
-    width: 100vh;
-    padding-top: 100px;
-    padding-left: 300px;
+
+.inner {
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    align-content: center;
+}
+.container {
+    min-height: 150vh;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -48,4 +53,14 @@ footer {
     text-align: center;
     font-family: sans-serif;
     height: 10vh;
+}
+@media screen and (max-width: 1200px) {
+    .inner {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .inner {
+        margin: 50px 0px;
+    }
 }
